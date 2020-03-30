@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>累加器</title>
+    <style>
+        div{
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+            
+        }
+        input{
+            background-color: #bdc3c7;
+            color: #f5f6fa;
+            width: 80px;
+            height: 40px;
+            border: none;
+            font-size: 30px;
+            
+        }
+        span{
+            border: none;
+            width: 80px;
+            height: 40px;
+            background-color: #f5f6fa;
+            display: block;
+            line-height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="button" value="+" @click="add">
+        <span>{{ number }}</span>
+        <input type="button" value="-"@click="reduce">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app=new Vue({
+            el:'#app',
+            data:{
+                 number:1
+            },
+            methods: {
+                add:function(){
+                    if(this.number<10){
+                        this.number++;
+                    }
+                    else{
+                        alert("最大到十");
+                    }
+                },
+                reduce:function(){
+                    if(this.number>0){
+                        this.number--;
+                    }
+                    else{
+                        alert("最小到零");
+                    }
+                }
+            },
+        })
+    </script>
+</body>
+</html>
