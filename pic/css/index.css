@@ -1,0 +1,22 @@
+div{
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+#pic{
+    width: 400px;
+    height: 300px;
+}
+#left{
+    position: absolute;
+    left: 0px;
+    bottom: 150px;
+    width: 40px;
+}
+#right{
+    position: absolute;
+    right: 0px;
+    bottom: 150px;
+    width: 40px;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片切换</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="app">
+        <img :src="imgArr[index]" id="pic">
+        <img src="images/zuojiantou.png" alt="" id="left" @click="pre" >
+        <img src="images/youjiantou.png" alt="" id="right"@click="next">
+    </div>
+    <script src="../../vue/vue.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
