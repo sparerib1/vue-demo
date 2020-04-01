@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList-最简单的待办事项</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+</head>
+<body>
+    <section id="todoapp">
+    <header>
+        <span id="tit">ToDoList</span>
+            <input type="text" placeholder="添加ToDo" v-model="inputvalue" @keyup.enter="add">
+    </header>
+    <div id="main">
+        <h2>正在进行<span id="todocount">{{ list.length }}</span></span>
+            
+        <ol class="todolist">
+         <li v-for="(item,index) in list" class="li1">
+             <div class="view">
+                 <label > {{ item }}</label>
+                 <img src="images/gouxuan.png" id="pic4" @click="finish(item,index)">
+                 <img src="images/shanchu.png" id="pic1" @click="remove(index)">
+             </div>
+         </li>
+        </ol>
+        <h2>已经完成<span id="donecount">{{arr.length}}</span></span>
+        <ul class="donelist">
+            <li v-for="(arrs,indexes) in arr" class="li2">
+                <div class="finish">
+                    <label for="ch2">{{ arrs }}</label> 
+                    <img src="images/wancheng.png" id="pic5">
+                    <img src="images/shanchu.png" id="pic2" @click="remove2(indexes)">
+                </div>
+            </li>
+        </ul>
+        </div>
+        <footer>
+            <img src="images/删除2.png" @click="clear" id="pic3">
+            <h4>点击垃圾桶清空信息</h4>
+        </footer>
+</section>
+<script src="js/index.js"></script>
+</body>
+</html>

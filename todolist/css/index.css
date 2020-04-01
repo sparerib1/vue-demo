@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+body{
+    background-color: #dfe6e9;
+}
+header{
+    height: 60px;
+    background-color: #2d3436;
+    color: #dfe6e9;
+    position: relative;
+}
+#tit{
+    position: absolute;
+    line-height: 60px;
+    left: 340px;
+    font-size: 1.5em;
+}
+input{
+    position: absolute;
+    width: 400px;
+    height: 24px;
+    border-radius: 5px;
+    right: 220px;
+    bottom: 18px;
+}
+#main{
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+}
+
+#todocount,#donecount{
+    float: right;
+    border: 1px solid #74b9ff;
+    background-color: #74b9ff;
+    border-radius: 50%;
+}
+.li1 #pic1{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    cursor: pointer;
+    
+}
+label{
+    font-size: 1em;
+    font-family: "隶书";
+    font-weight: lighter;
+    cursor: pointer;
+   
+    
+}
+.view{
+    background-color: #f5f6fa;
+    border: 1px solid #f5f6fa;
+    border-radius: 5px;
+}
+.li1{
+    margin: 10px 0;
+    position: relative;
+}
+
+.li2{
+    margin: 10px 0;
+    position: relative;
+}
+
+.li2 #pic2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    cursor: pointer;
+}
+.finish{
+    background-color: #b2bec3;
+    border: 1px solid #b2bec3;
+    border-radius: 5px;
+}
+footer{
+    margin: 0 auto;
+    width: 380px;
+    height: 80px;
+    text-align: center;
+    
+}
+#pic3{
+    width: 40px;
+    height: 40px;
+    
+}
+.li1 #pic4{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 30px;
+    cursor: pointer;
+}
+.li2 #pic5{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 30px;
+    cursor: pointer;
+}
