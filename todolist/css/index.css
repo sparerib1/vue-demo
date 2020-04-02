@@ -60,6 +60,7 @@ label{
     background-color: #f5f6fa;
     border: 1px solid #f5f6fa;
     border-radius: 5px;
+    
 }
 .li1{
     margin: 10px 0;
@@ -83,6 +84,7 @@ label{
     background-color: #b2bec3;
     border: 1px solid #b2bec3;
     border-radius: 5px;
+    
 }
 footer{
     margin: 0 auto;
@@ -111,4 +113,8 @@ footer{
     top: 4px;
     right: 30px;
     cursor: pointer;
+}
+h2{
+    width: 600px;
+    height: 40px;
 }

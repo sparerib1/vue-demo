@@ -15,7 +15,7 @@
             <input type="text" placeholder="添加ToDo" v-model="inputvalue" @keyup.enter="add">
     </header>
     <div id="main">
-        <h2>正在进行<span id="todocount">{{ list.length }}</span></span>
+        <h2>正在进行<span id="todocount">{{ list.length }}</span></h2>
             
         <ol class="todolist">
          <li v-for="(item,index) in list" class="li1">
@@ -26,12 +26,12 @@
              </div>
          </li>
         </ol>
-        <h2>已经完成<span id="donecount">{{arr.length}}</span></span>
+        <h2>已经完成<span id="donecount">{{arr.length}}</span></h2>
         <ul class="donelist">
             <li v-for="(arrs,indexes) in arr" class="li2">
                 <div class="finish">
                     <label for="ch2">{{ arrs }}</label> 
-                    <img src="images/wancheng.png" id="pic5">
+                    <img src="images/wancheng.png" id="pic5" @click="recover(arrs,indexes)">
                     <img src="images/shanchu.png" id="pic2" @click="remove2(indexes)">
                 </div>
             </li>

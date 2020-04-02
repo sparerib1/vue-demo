@@ -28,9 +28,12 @@ var app=new Vue({
         finish:function(item,index){
              
              this.arr.push(item);
-             item.state=!item.state;
              this.list.splice(index,1);
              
+        },
+        recover:function(arrs,indexes){
+            this.list.push(arrs);
+            this.arr.splice(indexes,1);
         },
         remove2:function(indexes){
             this.arr.splice(indexes,1);
