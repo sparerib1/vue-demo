@@ -38,9 +38,7 @@ var app=new Vue({
                     alert("该学生姓名："+this.students[i].name1);
                     
                 }
-                else{
-                    alert("没有该学生")
-                }
+                
             }
             
             }
