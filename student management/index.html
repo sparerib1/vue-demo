@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息管理</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../../vue/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <table>
+            <thead>
+                <tr>
+                    <td>学号</td>
+                    <td>姓名</td>
+                    <td>班级</td>
+                    <td>专业</td>
+                    <td colspan="2">操作</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-cloak v-for="(item,index) in students">
+                    <td>{{item.id1}}</td>
+                    <td>{{item.name1}}</td>
+                    <td>{{item.class1}}</td>
+                    <td>{{item.major}}</td>
+                    <td>
+                        <input type="button" value="删除" id="del" @click="remove(index)">
+                         <input type="button" value="修改" class="modi" @click="updatestu(index)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="inp">
+            <label>学号：<input type="text" id="idc" v-model="student.id1"></label>
+            <br/>
+            <label>姓名：<input type="text" id="nam"  v-model="student.name1"></label>
+            <br/>
+            <label>班级：<input type="text" id="cla" v-model="student.class1"></label>
+            <br/>
+            <label>专业：<input type="text" id="maj" v-model="student.major"></label>
+            <br/>
+            <input type="button" value="添加" class="add" @click="add">
+            <p>在上方输入框输入信息后点击需修改那列的修改按钮进行修改</p>
+            <p>输入学号查询该学生姓名</p>
+            <label>学号：<input type="text" id="idc" v-model="sear"></label>
+            <input type="button" value="查询" class="find" @click="search()">
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

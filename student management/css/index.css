@@ -1,0 +1,52 @@
+table{
+    margin: 20px auto;
+    padding: 0;
+    text-align: center;
+}
+thead td{
+    width: 120px;
+    height: 40px;
+    border-bottom: 1px solid #95a5a6;
+}
+tbody td{
+    border-bottom: 1px solid #95a5a6;
+    height: 30px;
+}
+#del{
+    background-color: #2ecc71;
+    border-radius: 5px;
+    color: #ecf0f1;
+}
+.modi{
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #ecf0f1;
+}
+.inp{
+    width: 500px;
+    margin: 0 auto;
+}
+.inp input[type="text"]{
+    border-radius: 5px;
+    width: 160px;
+    height: 20px;
+    margin: 8px;
+}
+.find{
+    background-color: #1abc9c;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    color: #ecf0f1;
+    text-align: center;
+}
+.add{
+    background-color: #1abc9c;
+    border-radius: 5px;
+    width: 220px;
+    height: 30px;
+    color: #ecf0f1;
+    text-align: center;
+}
+[v-cloak]
+{ display: none }
