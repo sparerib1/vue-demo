@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>排骨天气系统</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>排骨天气系统</h1>
+        <div class="searchborder">
+            <input type="text" id="sear" placeholder="请输入查询的天气" v-model="city" @keyup.enter="searchWeather">
+            <input type="button" value="搜索" class="searchbut" @click="searchWeather">
+        </div>
+        <div class="div2">
+            
+            <ul class="weather_list">
+                <li v-for="(item,index) in weatherList" >
+                  <div>
+                    <span class="wea">{{ item.type }}</span>
+                  </div>
+                  <div >
+                    <b>{{ item.low}}</b>
+                    ~
+                    <b>{{ item.high}}</b>
+          
+                  </div>
+                  <div>
+                    <span class="dat">{{ item.date }}</span>
+                  </div>
+                </li>
+              </ul>
+          
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

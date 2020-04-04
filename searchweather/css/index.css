@@ -1,0 +1,42 @@
+h1{
+      color:#0abde3;
+      font-family: 幼圆;
+      font-size: 3em;
+      text-align: center;
+}
+.searchborder{
+      width: 500px;
+      margin: 30px auto;
+}
+#sear{
+    width:400px;
+    height: 30px;
+    border-color: #0abde3;
+}
+.searchbut{
+    width: 80px;
+    height: 34px;
+    background-color: #00a8ff;
+    color: #f5f6fa;
+}
+ul{
+    list-style-type: none;
+    float: left;
+}
+.wea,b{
+    color: #f39c12;
+    font-size: 20px;
+}
+.dat{
+    font-size: 10px;
+}
+li{
+    text-align: center;
+    padding-right: 10px;
+    border-right: #95a5a6 1px solid;
+    float: left;
+}
+
+
+
+
